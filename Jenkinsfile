@@ -4,7 +4,8 @@ pipeline {
     stage ("Welcome to Jenkins") {
       steps {
         script {
-          println "Hi All, Welcome to Jenkins Automation"
+          var1=20
+		  println "Value of var1 is ${var1}"
         }
       }
     }
