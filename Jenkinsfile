@@ -1,10 +1,10 @@
 pipeline {
   agent any
-  parameters {
-  string description: 'Enter value for \'a\'', name: 'a'
-  string description: 'Enter value for \'b\'', name: 'b'
+    parameters {
+  	string defaultValue: '0', description: 'Enter Value for a', name: 'a'
+	string defaultValue: '0', description: 'Enter Value for b', name: 'b'
 }
-   stages {
+  stages {
     stage ("Welcome to Jenkins") {
       steps {
         script {
@@ -15,7 +15,6 @@ pipeline {
 		 }
 		 else {
 		 println "b is big"
-		 }
         }
       }
     }
