@@ -8,9 +8,7 @@ pipeline {
     stage ("Welcome to Jenkins") {
       steps {
         script {
-         a=${params.a}
-		 b=${params.b}
-		 println "value of a is ${params.a}"
+     		 println "value of a is ${params.a}"
 		 println "value of b is ${params.b}"
 		 }
 		}
