@@ -14,10 +14,10 @@ pipeline {
 		 b="${params.b}"
 		 println "value of a is ${a}"
 		 if(a > b){
-		 println "a is big"
+		 println "${a} is big"
 		 }
 		 else {
-		 println "b is big"
+		 println "${b} is big"
 		 		 }
 		 }
 		}
