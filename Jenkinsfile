@@ -8,13 +8,14 @@ pipeline {
     stage ("Welcome to Jenkins") {
       steps {
         script {
-         a=${params.a}
-		 b=${params.b}
-		 if(a > b){
-		 println "a is big"
-		 }
-		 else {
-		 println "b is big"
+          a=${params.a}
+	  b=${params.b}
+          if(a > b){
+             println "a is big"
+	  }
+	  else {
+	    println "b is big"
+	  }
         }
       }
     }
