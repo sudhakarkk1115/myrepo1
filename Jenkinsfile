@@ -12,6 +12,7 @@ pipeline {
 		 println "value of b is ${params.b}"
 		a="${params.a}"
 		 b="${params.b}"
+		 println "value of a is ${a}"
 		 if(a > b){
 		 println "a is big"
 		 }
