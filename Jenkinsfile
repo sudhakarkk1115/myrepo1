@@ -17,8 +17,7 @@ pipeline {
 		 }
 		 else {
 		 println "b is big"
-		 }
-		 }
+		 		 }
 		 }
 		}
     }
