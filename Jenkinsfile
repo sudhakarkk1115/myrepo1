@@ -4,7 +4,7 @@ pipeline {
   choice choices: ['dev', 'test', 'prod'], description: 'Select Environment', name: 'ENV'
 }
   environment {
-  JAVE_HOME = "/usr/bin/java8"
+  JAVA_HOME = "/usr/bin/java8"
 }
   stages {
     stage ("Welcome to Jenkins") {
