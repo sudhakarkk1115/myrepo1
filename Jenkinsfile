@@ -10,7 +10,7 @@ pipeline {
         script {
           println "Job name is ${JOB_NAME}"
 		  println "Build id is ${BUILD_ID}"
-		  println "Selected Environment is ${param.ENV}
+		  println "Selected Environment is ${param.ENV}"
         }
       }
     }
