@@ -10,13 +10,14 @@ pipeline {
         script {
      		 println "value of a is ${params.a}"
 		 println "value of b is ${params.b}"
-		a = ${params.a}
-		 b = ${params.b}
+		a="${params.a}"
+		 b="${params.b}"
 		 if(a > b){
 		 println "a is big"
 		 }
 		 else {
 		 println "b is big"
+		 }
 		 }
 		 }
 		}
