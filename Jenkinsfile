@@ -9,6 +9,7 @@ pipeline {
 		 while (i<=10) {
 		 println "My i value is ${i}"
 		 i=i+1
+	         sleep(5)
 		 }
 		 }
 		}
