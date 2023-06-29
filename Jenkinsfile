@@ -1,4 +1,4 @@
-def myfyn() {
+def myfn() {
 println "Welcome to functions"
 }
 pipeline {
