@@ -5,11 +5,14 @@ pipeline {
     stage ("Welcome to Jenkins") {
       steps {
         script {
-         i=1
-		 while (i<=10) {
-		 println "My i value is ${i}"
-		 i=i+1
-	         sleep(5)
+         //reading lines from file
+		 file myfile = new File("/tmp/test.txt")
+		 lines = myfile.readLines()
+		 //printing all lines
+		 println lines
+		 //printing each lines
+		 for(line in lines) {
+		 println line 
 		 }
 		 }
 		}
