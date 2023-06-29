@@ -1,5 +1,6 @@
 def myfn() {
 println "Welcome to functions"
+println "my a value is ${a} & my b value is ${b}"
 }
 pipeline {
   agent any    
@@ -7,7 +8,7 @@ pipeline {
     stage ("Welcome to Jenkins") {
       steps {
         script {
-		myfn()
+		myfn(100,200)
          
 		 }
 		}
