@@ -1,10 +1,8 @@
 def myfyn() {
 println "Welcome to functions"
 }
-
 pipeline {
-  agent any
-    
+  agent any    
   stages {
     stage ("Welcome to Jenkins") {
       steps {
